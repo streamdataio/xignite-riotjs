@@ -1,0 +1,107 @@
+.demo-card-square {
+  margin: 10px;
+}
+.demo-card-square.mdl-card {
+  width: 300px;
+  height: 270px;
+}
+.demo-card-square > .mdl-card__title {
+  max-height: 100px;
+  color: #fff;
+  background: rgb(33,150,243);
+}
+
+.mdl-card__supporting-text {
+  width: 95%;
+  padding: 5px;
+  font-size: 14px;
+}
+.mdl-card__supporting-text-back {
+  text-align: center;
+  padding:10px; 
+  line-height:150%;
+}
+.mdl-card__title > h1 {
+  margin: 10px 0px 10px 0px;
+}
+
+/* Flip animation - credits to http://davidwalsh.name/css-flip
+
+/* container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  float: left;
+  width: 320px;
+  height: 320px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 1.0s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Flash animations */
+.redflash{
+  -webkit-animation: redflash linear 1.5s 1;
+  animation: redflash linear 1.5s 1;
+}
+
+@-webkit-keyframes redflash {
+  0% { color: #FFFFFF; } 
+  50% { color: #FF0000; } 
+  100% {color: #FFFFFF; }
+}
+
+@keyframes redflash {
+  0% { color: #FFFFFF; } 
+  50% { color: #FF0000; } 
+  100% {color: #FFFFFF; }
+}
+
+.greenflash{
+  -webkit-animation: greenflash linear 1.5s 1;
+  animation: greenflash linear 1.5s 1;
+}
+
+@-webkit-keyframes greenflash {
+  0% { color: #FFFFFF; } 
+  50% { color: #00CC00; }  
+  100% {color: #FFFFFF; }
+}
+
+@keyframes greenflash {
+  0% { color: #FFFFFF; } 
+  50% { color: #00CC00; }  
+  100% {color: #FFFFFF; }
+}
