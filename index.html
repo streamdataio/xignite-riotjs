@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Xignite Demo</title>
+    <link rel="icon" type="image/png" href="./app/img/favicon.png" />
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./app/css/xignite-card.css" type="text/css">
@@ -32,13 +33,13 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
 
     <!-- include riot.js and the compiler -->
-    <script src="https://cdn.jsdelivr.net/g/riot@2.0.14(riot.min.js+compiler.min.js)"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.13.2/riot+compiler.min.js"></script>
 
     <!-- mount normally -->
     <script>
       var streamdataAppToken = "[YOUR_STREAMDATAIO_APP_TOKEN]";
       var xigniteToken = "[YOUR_XIGNITE_TOKEN]";
-
+      
       var bus = riot.observable();
       var streamdataService = new StreamdataService(streamdataAppToken, xigniteToken, bus);
       
