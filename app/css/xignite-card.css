@@ -1,3 +1,29 @@
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.header img {
+  padding:5em;
+  box-sizing: border-box;
+  min-width: 10%;
+  max-width: 80%;
+  width: 20%;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .demo-card-square {
   margin: 10px;
 }
