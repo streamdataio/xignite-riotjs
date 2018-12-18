@@ -12,7 +12,7 @@ further reading, you can read the blog entry explanation at [streamdata blog]( h
 3- Edit index.html and replace [YOUR_XIGNITE_TOKEN] and [YOUR_STREAMDATAIO_APP_TOKEN] with the corresponding keys.
 
 4- Launch the app with your favorite server
-  * the simplest way, if Python is installed on your machine, is the executing the command `python -m SimpleHTTPServer 8080` 
+  * the simplest way, if Python is installed on your machine, is to run the command `python -m SimpleHTTPServer 8080` 
   * if you are an npm afficionados, you can use http-server
   
   ```
